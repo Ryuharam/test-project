@@ -1,4 +1,4 @@
-package com.ssafy.userservice.user;
+package com.ssafy.userservice.jwt;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 @Table(name = "USERS")
 @Getter
-public class User implements UserDetails {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,19 +36,5 @@ public class User implements UserDetails {
     @CreatedDate
     private Date created_at;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
-    }
-
-    @Override
-    public String getUsername() {
-        return email;
-    }
 
 }

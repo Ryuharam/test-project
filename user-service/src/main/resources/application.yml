@@ -23,6 +23,12 @@ spring:
     username: sa
     password:
 
+jwt:
+  access-secret: secretkeysecretkeysecretkeysecretkeysecretkeysecretkey
+  refresh-secret: secretkeysecretkeysecretkeysecretkeysecretkeysecretkeysecretkey
+  access-expiration: 600000  # 10 min: 10min * 60 sec * 1000 millisecond
+  refresh-expiration: 10800000  # 10800000 3 hours: 3hours * 60min * 60sec * 1000 millisecond
+
 logging:
   level:
     org:
