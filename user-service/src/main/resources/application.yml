@@ -28,6 +28,9 @@ jwt:
   refresh-secret: secretkeysecretkeysecretkeysecretkeysecretkeysecretkeysecretkey
   access-expiration: 600000  # 10 min: 10min * 60 sec * 1000 millisecond
   refresh-expiration: 10800000  # 10800000 3 hours: 3hours * 60min * 60sec * 1000 millisecond
+  secretKey: U2VjdXJlU2VjcmV0S2V5VGhhdElzU3VwZXJSYW5kb21BbmRDb21wbGV4
+
+
 
 logging:
   level:
